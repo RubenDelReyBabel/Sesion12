@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v2.3.7 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.03.20 a las 10:54:35 AM CET 
+
+  -->
+      
+    <bindings xmlns:tns="http://www.dataaccess.com/webservicesserver/" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="es.neesis.client"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:NumberToWords">
+                  
+            <class ref="es.neesis.client.api.NumberToWords"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:NumberToWordsResponse">
+                  
+            <class ref="es.neesis.client.api.NumberToWordsResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:NumberToDollars">
+                  
+            <class ref="es.neesis.client.api.NumberToDollars"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:NumberToDollarsResponse">
+                  
+            <class ref="es.neesis.client.api.NumberToDollarsResponse"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>
