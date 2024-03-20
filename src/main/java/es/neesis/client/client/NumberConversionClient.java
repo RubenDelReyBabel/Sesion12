@@ -13,6 +13,10 @@ public class NumberConversionClient extends WebServiceGatewaySupport {
 
     public NumberToDollarsResponse numberToDollars(double number){
         NumberToDollars request = new NumberToDollars();
+
+        if(number < 0)
+            throw new IllegalArgumentException("Number must be positive");
+
         request.setDNum(BigDecimal.valueOf(number));
 
         return (NumberToDollarsResponse) getWebServiceTemplate().marshalSendAndReceive(request);
@@ -21,6 +25,9 @@ public class NumberConversionClient extends WebServiceGatewaySupport {
     public NumberToWordsResponse numberToWords(int number){
         NumberToWords request = new NumberToWords();
         request.setUbiNum(new BigInteger(String.valueOf(number)));
+
+        if(number < 0)
+            throw new IllegalArgumentException("Number must be positive");
 
         return (NumberToWordsResponse) getWebServiceTemplate().marshalSendAndReceive(request);
     }
